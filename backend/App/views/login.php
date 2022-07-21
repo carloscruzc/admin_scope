@@ -10,7 +10,7 @@
             }
 
             .btn-blue-cardio {
-                background-color: #4682c8;
+                background-image: linear-gradient(310deg, #6D132C 50%, #2A010D 100%);
                 color: #ffffff;
             }
 
@@ -19,7 +19,7 @@
             }
 
             .morado-musa-text{
-                color: rgb(98 56 246);
+                color: #6D132C;
             }
 
             .bg-musa-morado{
@@ -41,7 +41,7 @@
                             <div class="card card-plain mt-8">
                                 <div class="card-header pb-0 text-start">
                                     <h3 class="font-weight-bolder morado-musa-text">GRUPO LAHE</h3>
-                                    <h5 class="font-weight-bolder morado-musa-text">Administrador ASO CARDIO 2022</h5>
+                                    <h5 class="font-weight-bolder morado-musa-text">Administrador SCOPE MEETING 2022</h5>
                                     <p class="mb-0">Introduce tus credenciales para iniciar sesión.</p>
                                 </div>
                                 <div class="card-body">

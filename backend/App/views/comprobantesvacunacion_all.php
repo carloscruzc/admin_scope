@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <title>
-    Comprobantes de Vacunación - ASO CARDIO - GRUPO LAHE
+    Comprobantes de Vacunación - SCOPE - GRUPO LAHE
 </title>
 <body class="g-sidenav-show  bg-gray-100">
     <?php echo $asideMenu;?>

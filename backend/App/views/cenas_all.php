@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <title>
-    Cenas - ASO CARDIO - GRUPO LAHE
+    Cenas - SCOPE - GRUPO LAHE
 </title>
 <body class="g-sidenav-show  bg-gray-100">
     <?php echo $asideMenu;?>

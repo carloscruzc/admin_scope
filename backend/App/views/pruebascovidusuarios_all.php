@@ -1,6 +1,6 @@
 <?php echo $header; ?>
 <title>
-    Pruebas Covid - ASO CARDIO - GRUPO LAHE
+    Pruebas Covid - SCOPE - GRUPO LAHE
 </title>
 <body class="g-sidenav-show  bg-gray-100">
     <?php echo $asideMenu;?>

@@ -3,7 +3,7 @@
     Asistentes Detalles - <?php echo $detalles_registro['nombre'] . ' ';
                                                                                                         echo $detalles_registro['segundo_nombre'] . ' ';
                                                                                                         echo $detalles_registro['apellido_paterno'] . ' ';
-                                                                                                        echo $detalles_registro['apellido_materno']; ?> - ASO CARDIO - GRUPO LAHE
+                                                                                                        echo $detalles_registro['apellido_materno']; ?> - SCOPE - GRUPO LAHE
 </title>
 <body class="g-sidenav-show  bg-gray-100">
     <?php echo $asideMenu;?>

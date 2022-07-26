@@ -401,7 +401,7 @@ html;
         $pdf->AddPage();
         $pdf->SetFont('Arial', 'B', 8);    //Letra Arial, negrita (Bold), tam. 20
         $pdf->SetFont('Arial', 'B', 16);
-        // $pdf->Image('qrs/gafetes/'.$clave.'.png',87.5,185,35,0,'PNG');
+        $pdf->Image('qrs/'.$clave.'.png',94,225,25,0,'PNG');
         $pdf->SetFont('Arial', 'B', 25);
         // $pdf->Multicell(133, 80, $clave_ticket, 0, 'C');
 
@@ -420,11 +420,11 @@ html;
         $pdf->SetRightMargin(0);
         $pdf->SetAutoPageBreak(true,25);
         $pdf->SetMargins(30, 25, 30, 10);
-        $pdf->Multicell(80,11, utf8_decode($nombres), 0, 'C');
+        // $pdf->Multicell(80,11, utf8_decode($nombres), 0, 'C');
         $pdf->setXY(66,206);
         $pdf->SetFont('Arial','B',21);
-        $pdf->Multicell(80,11, utf8_decode($apellidos), 0, 'C');
-        $pdf->output();     
+        // $pdf->Multicell(80,11, utf8_decode($apellidos), 0, 'C');
+        $pdf->output();
     }
 
 

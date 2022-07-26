@@ -423,6 +423,7 @@ html;
         foreach ($all_ra as $key => $value) {
             if ($value['clave'] == '' || $value['clave'] == NULL || $value['clave'] == 'NULL') {
                 $clave_10 = $this->generateRandomString(10);
+                $this->generaterQr($all_ra['clave']);
                 AsistentesDao::updateClaveRA($value['id_registro_acceso'], $clave_10);
             }
         }
@@ -430,7 +431,7 @@ html;
         foreach ($all_ra as $key => $value) {
             if ($value['ticket_virtual'] == '' || $value['ticket_virtual'] == NULL || $value['ticket_virtual'] == 'NULL') {
                 $clave_6 = $this->generateRandomString(6);
-                $this->generaterQr($all_ra['ticket_virtual']);
+                // $this->generaterQr($all_ra['ticket_virtual']);
                 AsistentesDao::updateTicketVirtualRA($value['id_registro_acceso'], $clave_6);
             }
         }

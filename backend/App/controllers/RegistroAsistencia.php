@@ -389,7 +389,7 @@ html;
         $segundo_nombre = html_entity_decode($datos_user['segundo_nombre']);
         $apellido = html_entity_decode($datos_user['apellido_paterno']);
         $segundo_apellido = html_entity_decode($datos_user['apellido_materno']);
-        $nombre_completo = ($nombre)." ".($apellido);
+        $nombre_completo = ($nombre)." ".($segundo_nombre)." ".($apellido)." ".($segundo_apellido);
         $nombre_completo = mb_strtoupper($nombre_completo);
         
 
@@ -410,8 +410,8 @@ html;
         //$num_linea =utf8_decode("Línea: 39");
         //$num_linea2 =utf8_decode("Línea: 39");
 
-        $pdf->setXY(70,222);
-        $pdf->SetFont('Times','B',18);
+        $pdf->setXY(67,180);
+        $pdf->SetFont('Times','B',30);
         #4D9A9B
         $pdf->SetTextColor(0, 0, 0);
         $pdf->SetLeftMargin(0);
@@ -419,7 +419,7 @@ html;
         $pdf->SetRightMargin(0);
         $pdf->SetAutoPageBreak(true,25);
         $pdf->SetMargins(30, 25, 30, 10);
-        $pdf->Multicell(70.8,7, utf8_decode($nombre_completo), 0, 'C');
+        $pdf->Multicell(80,8, utf8_decode($nombre_completo), 0, 'C');
         $pdf->output();     
     }
 

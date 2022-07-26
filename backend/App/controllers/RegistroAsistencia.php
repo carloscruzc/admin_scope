@@ -389,8 +389,10 @@ html;
         $segundo_nombre = html_entity_decode($datos_user['segundo_nombre']);
         $apellido = html_entity_decode($datos_user['apellido_paterno']);
         $segundo_apellido = html_entity_decode($datos_user['apellido_materno']);
-        $nombre_completo = ($nombre)." ".($segundo_nombre)." ".($apellido)." ".($segundo_apellido);
-        $nombre_completo = mb_strtoupper($nombre_completo);
+        $nombres = ($nombre)." ".($segundo_nombre);
+        $apellidos = ($apellido).($segundo_apellido);
+        $nombres = mb_strtoupper($nombres);
+        $apellidos = mb_strtoupper($apellidos);
         
 
         $insertImpresionGafete = RegistroAsistenciaDao::insertImpGafete($datos_user['id_registro_acceso']);
@@ -411,7 +413,7 @@ html;
         //$num_linea2 =utf8_decode("Línea: 39");
 
         $pdf->setXY(67,180);
-        $pdf->SetFont('Arial','B',30);
+        $pdf->SetFont('Arial','B',20);
         #4D9A9B
         $pdf->SetTextColor(0, 0, 0);
         $pdf->SetLeftMargin(0);
@@ -419,7 +421,10 @@ html;
         $pdf->SetRightMargin(0);
         $pdf->SetAutoPageBreak(true,25);
         $pdf->SetMargins(30, 25, 30, 10);
-        $pdf->Multicell(80,11, utf8_decode($nombre_completo), 0, 'C');
+        $pdf->Multicell(80,11, utf8_decode($nombres), 0, 'C');
+        $pdf->setXY(67,190);
+        $pdf->SetFont('Arial','B',20);
+        $pdf->Multicell(80,11, utf8_decode($apellidos), 0, 'C');
         $pdf->output();     
     }
 

@@ -389,11 +389,10 @@ html;
         $segundo_nombre = html_entity_decode($datos_user['segundo_nombre']);
         $apellido = html_entity_decode($datos_user['apellido_paterno']);
         $segundo_apellido = html_entity_decode($datos_user['apellido_materno']);
-        $nombres = ($nombre)." ".($segundo_nombre);
-        $apellidos = ($apellido).($segundo_apellido);
+        $nombres = (trim($nombre))." ".(trim($segundo_nombre));
+        $apellidos = (trim($apellido))." ".(trim($segundo_apellido));
         $nombres = mb_strtoupper($nombres);
-        $apellidos = mb_strtoupper($apellidos);
-        
+        $apellidos = mb_strtoupper($apellidos); 
 
         $insertImpresionGafete = RegistroAsistenciaDao::insertImpGafete($datos_user['id_registro_acceso']);
 

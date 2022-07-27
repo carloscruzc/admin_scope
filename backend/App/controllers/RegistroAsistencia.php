@@ -28,8 +28,8 @@ class RegistroAsistencia
         $extraHeader = <<<html
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="apple-touch-icon" sizes="76x76" href="https://foromusa.com/assets/images/Musa0-01.png">
-        <link rel="icon" type="image/png" href="https://foromusa.com/assets/images/Musa0-01.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="https://forolatamcardiometabolico.com/assets/img/adium.png">
+        <link rel="icon" type="image/png" href="https://forolatamcardiometabolico.com/assets/img/adium.png">
         <title>
             Asistencia CONAVE Convención 2022 ASOFARMA
         </title>
@@ -99,14 +99,11 @@ html;
         foreach ($lista_registrados as $key => $value) {
             $tabla .= <<<html
             <tr>
-                <td><b>{$value['nombre_completo']} </b> <span class="badge badge-info" style="color: white; background: {$value['color_linea']};"> {$value['nombre_linea_ejecutivo']} </span></td>
+                <td><b>{$value['nombre_completo']} </b> <span class="badge badge-info" style="color: white; background: #6D132C"> {$value['clave']} </span></td>
                 <td>
                     <u><a href="mailto:{$value['email']}"><span class="fa fa-mail-bulk"> </span> {$value['email']}</a></u>
                     <br><br>
                     <u><a href="https://api.whatsapp.com/send?phone=52{$value['telefono']}&text=Buen%20d%C3%ADa,%20te%20contacto%20de%20parte%20del%20Equipo%20Grupo%20LAHE%20%F0%9F%98%80" target="_blank"><span class="fa fa-whatsapp" style="color:green;"> </span> {$value['telefono']}</a></u>
-                </td>
-                <td>
-                    <b>Especialidad: </b>{$value['nombre_especialidad']}
                 </td>
                 <td class="text-center"><span class="badge badge-success">En Tiempo</span><td>
 html;

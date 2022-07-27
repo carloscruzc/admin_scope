@@ -136,7 +136,6 @@
                                 <tr>
                                     <th>Nombre</th>
                                     <th>Información Personal</th>
-                                    <th>Información de Trabajo</th>
                                     <th>Status<th>
                                     <!-- <th>Acciones</th> -->
                                 </tr>

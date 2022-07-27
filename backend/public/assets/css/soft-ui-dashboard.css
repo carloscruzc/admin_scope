@@ -4112,8 +4112,8 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-info {
-  color: #17c1e8;
-  border-color: #17c1e8;
+  color: #6D132C;
+  border-color: #2A010D;
 }
 
 .btn-outline-info:hover {
@@ -4132,9 +4132,9 @@ fieldset:disabled .btn {
 .btn-outline-info:active,
 .btn-outline-info.active,
 .btn-outline-info.dropdown-toggle.show {
-  color: #000;
-  background-color: #17c1e8;
-  border-color: #17c1e8;
+  color: #FFF;
+  color: #6D132C;
+  border-color: #2A010D;
 }
 
 .btn-check:checked+.btn-outline-info:focus,
@@ -4147,7 +4147,8 @@ fieldset:disabled .btn {
 
 .btn-outline-info:disabled,
 .btn-outline-info.disabled {
-  color: #17c1e8;
+  color: #6D132C;
+  border-color: #2A010D;
   background-color: transparent;
 }
 
